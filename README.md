@@ -21,10 +21,13 @@ Make sure you have 2000 MB free on your drive because of node_modules :)
 ### Installation
 
 1. Clone repository from git
-2. cd into article-reader and use "npm install"
-3. "npm run dev" to run vite developement instance on port 5173
-4. "npm run build" to run vite build
-5. "npm run preview" when you have a built a release and have dist folder to preview the bundled app
+  ```bash
+https://github.com/gdejanovic/article-reader.git
+```
+3. cd into article-reader and use "npm install"
+4. "npm run dev" to run vite developement instance on port 5173
+5. "npm run build" to run vite build
+6. "npm run preview" when you have a built a release and have dist folder to preview the bundled app
 
 ## Testing
 You can run tests to ensure the correctness of the application's functionality. Follow the steps below to execute the tests.
