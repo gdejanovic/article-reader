@@ -1,0 +1,10 @@
+@import '../../../assets/scss/03_cards/card';
+
+.search-box {
+    line-height: 20px;
+    border: 1px solid $darkBlue;
+    border-radius: 5px;
+    &:focus-visible {
+        outline: 1px solid $lightBlue;
+    }
+}   

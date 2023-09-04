@@ -1,0 +1,15 @@
+@import '../variables.scss';
+
+.card {
+    border: 1px solid $lightBlue;
+    border-radius: 5px;
+    margin: 10px 40px;
+    box-shadow: 2px 2px 3px;
+    cursor: pointer;   
+    &.single-post {
+        cursor: default;
+    }
+    ul {
+        list-style-type: none;
+    }
+}
