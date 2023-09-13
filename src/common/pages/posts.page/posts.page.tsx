@@ -6,12 +6,19 @@ import { Pagination } from "../../partials/pagination/pagination";
 import { Post, Comment, User } from "../../interfaces/posts.interfaces";
 import "./posts.styles.scss";
 interface PostsPageProps {  message: string, componentName: string; }
-
+interface FilteredDataInterface {
+    postId: number;
+    userId: number;
+    postTitle: string;
+    postBody: string;
+    userName: string;
+    comments: Comment[];
+}[]
 export const PostsPage = (props: PostsPageProps) => {
     const [posts, setPosts] = useState<Post[]>([]);
     const [comments, setComments] = useState<Comment[]>([]);
     const [users, setUsers] = useState<User[]>([]);
-    const [appData, setAppData] = useState<any[]>([]);
+    const [appData, setAppData] = useState<FilteredDataInterface[]>([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
     const [filterUserName, setFilterUserName] = useState<string | null>(null);
